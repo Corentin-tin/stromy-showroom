@@ -89,18 +89,6 @@ paginatePath = "page"
         text_color = "text-gray-700"
         hover_background = "hover:bg-gray-50"
         text_size = "text-sm"
-    
-    # Button configuration
-    [params.header.buttons]
-      # Sign In button
-      [params.header.buttons.signIn]
-        text = "Sign in"
-        url = "/signin"
-      
-      # Get Started button
-      [params.header.buttons.getStarted]
-        text = "Get Started"
-        url = "/get-started"
 
   # Blog configuration
   [params.blog]
