@@ -52,6 +52,8 @@ jobs:
           enablement: true
       - name: Install Node.js dependencies
         run: "[[ -f package-lock.json || -f npm-shrinkwrap.json ]] && npm ci || true"
+      - name: Build TailwindCSS
+        run: npx tailwindcss -i themes/hugo-saasify-theme/assets/css/main.css -o static/css/style.css --minify
       - name: Build with Hugo
         env:
           HUGO_CACHEDIR: ${{ runner.temp }}/hugo_cache
