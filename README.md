@@ -1,74 +1,76 @@
 # Stromy Showroom
 
 Static website for Stromy company, built with Hugo and the
-`hugo-universal-theme`.
+`hugo-saasify-theme`.
 
 ## Requirements
 
-- Hugo (latest stable recommended)
+- Hugo Extended v0.80.0+ (required for theme)
+- Node.js v14.x+
+- npm
 
 ## Quick start
 
-1) Start the dev server:
+1) Install dependencies:
 
 ```sh
-hugo server -D
+npm install
 ```
 
-2) Open the local URL printed by Hugo.
-
-3) Build production files:
+2) Start the dev server:
 
 ```sh
-hugo
+npm run start
+```
+
+This will compile TailwindCSS in watch mode and start Hugo dev server.
+
+3) Open the local URL (http://localhost:1313)
+
+4) Build production files:
+
+```sh
+npm run build
 ```
 
 Output is written to `public/`.
 
 ## Project structure
 
-- `hugo.toml`: site configuration (baseURL, title, theme, params).
-- `content/`: pages and posts (create this as you add content).
-- `data/`: homepage sections (carousel, features, testimonials, clients).
-- `static/`: images and custom CSS (ex: `static/css/custom.css`).
-- `themes/hugo-universal-theme/`: theme source (do not edit unless you are
-  maintaining the theme).
+- `hugo.toml`: site configuration (baseURL, title, theme, params, menus).
+- `content/`: pages and blog posts in markdown format.
+- `static/`: static assets (images, fonts). CSS is auto-generated to `static/css/style.css`.
+- `layouts/`: custom layout overrides (use `layouts/partials/custom-head.html` for custom scripts).
+- `tailwind.config.js`: TailwindCSS customization (colors, fonts, etc).
+- `themes/hugo-saasify-theme/`: theme source as git submodule (do not edit).
 
-## Hugo Universal Theme docs
+## Theme Features
 
-See the [Hugo Universal Theme documentation](themes/hugo-universal-theme/README.md)
+- Built with TailwindCSS 3.x for modern, responsive design
+- 21 shortcodes for rapid component development
+- Performance optimized (90+ Lighthouse scores)
+- Multilingual support with i18n
+- SEO optimized with semantic HTML
+
+## Hugo Saasify Theme docs
+
+See the [Hugo Saasify Theme documentation](themes/hugo-saasify-theme/README.md) or visit https://github.com/chaoming/hugo-saasify-theme
 
 ## Deploy to GitHub Pages
 
-Recommended: build with GitHub Actions and publish `public/` to `gh-pages`.
+This site uses GitHub Actions to build and deploy automatically to GitHub Pages.
 
-1) Set `baseURL` in `hugo.toml`:
-   - Project page: `https://<user>.github.io/<repo>/`
-   - User page: `https://<user>.github.io/` (repo must be named `<user>.github.io`)
+The workflow (`.github/workflows/hugo.yaml`) handles:
+1. Installing Hugo Extended
+2. Installing Node.js dependencies
+3. Building TailwindCSS styles
+4. Building Hugo site with minification
+5. Deploying to GitHub Pages
 
-2) Add a workflow like this (save as `.github/workflows/deploy.yml`):
+**Requirements:**
+- Set `baseURL` in `hugo.toml` to your GitHub Pages URL
+- Ensure theme is added as git submodule: `git submodule add https://github.com/chaoming/hugo-saasify-theme themes/hugo-saasify-theme`
+- Push to `main` branch to trigger automatic deployment
 
-```yaml
-name: Deploy Hugo
-on:
-  push:
-    branches: ["main"]
-permissions:
-  contents: write
-jobs:
-  build:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v4
-      - uses: peaceiris/actions-hugo@v2
-        with:
-          hugo-version: "0.125.0"
-      - run: hugo --minify
-      - uses: peaceiris/actions-gh-pages@v4
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./public
-```
-
-3) In GitHub repo settings -> Pages, set the source to the `gh-pages` branch.
+In GitHub repo settings → Pages, set the source to "GitHub Actions".
 
