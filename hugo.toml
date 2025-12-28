@@ -1,4 +1,4 @@
-baseurl = "https://corentin-tin.github.io/stromy-showroom/"
+baseurl = "https://stromy.com.au/"
 title = "Universal"
 theme = "hugo-universal-theme"
 # themesDir = "../.."  # Commented out - using default themes/ directory
