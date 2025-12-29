@@ -20,24 +20,18 @@ description: "Learn about our mission, leadership team, and the investors backin
 {{< section-container class="py-20 bg-gray-50" >}}
     <div class="max-w-6xl mx-auto">
         <h2 class="text-3xl font-bold text-center mb-12">Leadership Team</h2>
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-            {{< team-member 
-                name="Sarah Johnson"
-                title="Chief Executive Officer"
-                image="images/company/exec-1.svg"
-                linkedin="#"
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+            {{< team-member
+                name="William Masquelier"
+                title="Supreme Master"
+                image="images/company/william-masquelier.jpeg"
+                linkedin="https://www.linkedin.com/in/williammasquelier/"
             >}}
-            {{< team-member 
-                name="Michael Chen"
-                title="Chief Technology Officer"
-                image="images/company/exec-2.svg"
-                linkedin="#"
-            >}}
-            {{< team-member 
-                name="Emily Rodriguez"
-                title="Chief Product Officer"
-                image="images/company/exec-3.svg"
-                linkedin="#"
+            {{< team-member
+                name="Corentin Merlé"
+                title="Founding Partner - Data Scientist"
+                image="images/company/corentin-merle.jpeg"
+                linkedin="https://www.linkedin.com/in/corentinmerle/"
             >}}
         </div>
     </div>
