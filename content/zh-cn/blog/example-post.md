@@ -5,7 +5,7 @@ author: "作者姓名"
 description: "这是一篇示例博客文章，展示中文内容的格式。"
 categories: ["示例"]
 tags: ["hugo", "多语言"]
-featured_image: "images/blog/blog-1.jpg"
+featured_image: "/images/blog/blog-1.jpg"
 ---
 
 ## 介绍
