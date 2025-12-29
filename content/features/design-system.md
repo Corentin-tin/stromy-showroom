@@ -15,7 +15,7 @@ features:
     description: "Modular layout system that adapts to your content. Create unique page layouts while maintaining consistent spacing and alignment."
 demo:
   description: "Explore our comprehensive design system built with TailwindCSS."
-  image: "images/feature-2.svg"
+  image: "/images/feature-2.svg"
 ---
 
 ## Comprehensive Design System

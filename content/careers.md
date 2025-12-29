@@ -5,7 +5,7 @@ layout: "career"
 
 culture_section:
   title: "Our Culture"
-  image: "images/team.jpg"
+  image: "/images/team.jpg"
   image_alt: "Our Team"
   image_caption: "Join our amazing team!"
   values:

@@ -5,7 +5,7 @@ author: "Alex Johnson"
 description: "Learn how to deploy your Hugo site to various platforms including Netlify, Vercel, and GitHub Pages."
 categories: ["Deployment"]
 tags: ["hugo", "deployment", "netlify", "vercel", "github-pages"]
-featured_image: "images/blog/blog-3.webp"
+featured_image: "/images/blog/blog-3.webp"
 ---
 
 {{< toc >}}

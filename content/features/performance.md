@@ -15,7 +15,7 @@ features:
     description: "Deploy your site to any CDN for global distribution. Static files are optimized for edge caching and maximum performance."
 demo:
   description: "See how our optimized build process delivers lightning-fast page loads and smooth transitions."
-  image: "images/feature-1.svg"
+  image: "/images/feature-1.svg"
 ---
 
 ## Built for Speed

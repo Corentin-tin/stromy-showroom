@@ -5,7 +5,7 @@ author: "Sarah Chen"
 description: "Learn advanced techniques to optimize your Hugo site for better performance, faster load times, and improved user experience."
 categories: ["Performance"]
 tags: ["hugo", "optimization", "performance", "seo"]
-featured_image: "images/blog/blog-4.jpg"
+featured_image: "/images/blog/blog-4.jpg"
 ---
 
 {{< toc >}}

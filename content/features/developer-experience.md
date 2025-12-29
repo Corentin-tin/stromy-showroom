@@ -15,7 +15,7 @@ features:
     description: "Comprehensive documentation covers everything from setup to advanced customization. Includes examples and best practices."
 demo:
   description: "See how our developer-friendly architecture makes building websites a breeze."
-  image: "images/feature-3.svg"
+  image: "/images/feature-3.svg"
 ---
 
 ## Built for Developers
