@@ -24,13 +24,13 @@ description: "Learn about our mission, leadership team, and the investors backin
             {{< team-member
                 name="William Masquelier"
                 title="Supreme Master"
-                image="/static/images/company/william-masquelier.jpeg"
+                image="/images/company/william-masquelier.jpeg"
                 linkedin="https://www.linkedin.com/in/williammasquelier/"
             >}}
             {{< team-member
                 name="Corentin Merlé"
                 title="Founding Partner - Data Scientist"
-                image="/static/images/company/corentin-merle.jpeg"
+                image="/images/company/corentin-merle.jpeg"
                 linkedin="https://www.linkedin.com/in/corentinmerle/"
             >}}
         </div>
@@ -41,10 +41,10 @@ description: "Learn about our mission, leadership team, and the investors backin
     <div class="max-w-6xl mx-auto">
         <h2 class="text-3xl font-bold text-center mb-12">Backed by World-Class Investors</h2>
         <div class="grid grid-cols-2 md:grid-cols-4 gap-8 items-center">
-            {{< investor-logo name="Sequoia Capital" image="/static/images/company/investor-1.svg" >}}
-            {{< investor-logo name="Andreessen Horowitz" image="/static/images/company/investor-2.svg" >}}
-            {{< investor-logo name="Accel" image="/static/images/company/investor-3.svg" >}}
-            {{< investor-logo name="Benchmark" image="/static/images/company/investor-4.svg" >}}
+            {{< investor-logo name="Sequoia Capital" image="/images/company/investor-1.svg" >}}
+            {{< investor-logo name="Andreessen Horowitz" image="/images/company/investor-2.svg" >}}
+            {{< investor-logo name="Accel" image="/images/company/investor-3.svg" >}}
+            {{< investor-logo name="Benchmark" image="/images/company/investor-4.svg" >}}
         </div>
     </div>
 {{< /section-container >}}
