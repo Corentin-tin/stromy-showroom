@@ -29,8 +29,8 @@ testimonials:
 {{< hero
     headline="Build Your SaaS Website"
     sub_headline="Create stunning, responsive websites that load instantly. Built with Hugo and TailwindCSS for maximum performance and flexibility."
-    primary_button_text="Get Started Free"
-    primary_button_url="#"
+    primary_button_text="Contact Us"
+    primary_button_url="/contact"
     secondary_button_text="View Demo"
     secondary_button_url="#"
     hero_image="/images/hero-dashboard.svg"

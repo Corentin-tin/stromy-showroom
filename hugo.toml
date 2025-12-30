@@ -36,8 +36,8 @@ paginatePath = "page"
     gradient_to = "#7c3aed"    # Purple-600
     gradient_angle = 30
     [params.cta.primary_button]
-      text = "Get Started Free"
-      url = "/get-started"
+      text = "Contact Us"
+      url = "/contact"
     [params.cta.secondary_button]
       text = "Book Demo"
       url = "/demo"
@@ -89,6 +89,14 @@ paginatePath = "page"
         text_color = "text-gray-700"
         hover_background = "hover:bg-gray-50"
         text_size = "text-sm"
+      
+      # Get Started button
+      [params.header.buttons.getStarted]
+        text = "Contact Us"
+        url = "/contact"
+
+  [params.contact]
+    form_action = "#"
 
   # Blog configuration
   [params.blog]
